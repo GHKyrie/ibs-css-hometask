@@ -1,3 +1,60 @@
-body {
+body{
     font-family: 'Roboto', sans-serif;
+    height: 1024px;
 }
+/* Desktop catalog*/
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 23px 24px 0 24px;
+}
+header div{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+header .b1{
+    width: 300px;
+    height: 40px;
+}
+header .b1:hover{
+    border-bottom: 2px solid #fcac45;
+}
+header .b1:hover #header_search{
+    filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg) brightness(100%) contrast(98%);
+}
+header input{
+    border: 0;
+    height: 16px;
+    color: black;
+}
+header input:focus{
+    outline: none;
+}
+header input::placeholder{
+    font-weight: bold;
+}
+header button{
+    background: none;
+    border: none;
+}
+header img{
+    width: 20px;
+    height: 20px;
+}
+#header_search{
+    width: 17.5px;
+    height: 17.5px;
+    margin-right: 11.5px;
+}
+#header_cart{
+    margin-right: 21px;
+}
+#header_cart:hover{
+    filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg) brightness(100%) contrast(98%);
+}
+#header_userpage:hover{
+    filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg) brightness(100%) contrast(98%);
+}
+/* Catalog */
