@@ -1,8 +1,9 @@
 body{
     font-family: 'Roboto', sans-serif;
     height: 1024px;
-    margin: 0;
-    padding: 0;
+}
+*{
+    transition: 0.2s;
 }
 /* Header */
 header{
@@ -302,7 +303,7 @@ input[type='number'] {
         width: 100%;
     }
     .d_description{
-        margin: 0 24px;
+        margin: 0 16px;
     }
     .d_preview{
         width: 100%;
@@ -315,5 +316,65 @@ input[type='number'] {
     }
     #d_details_descr{
         margin-bottom: 16px;
+    }
+
+    #d_buy{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #d_price{
+        order: 1;
+        margin-right: 60%;
+        margin-bottom: 16px;
+    }
+    .p_favorite.desc{
+        order: 2;
+        justify-self: flex-end;
+        margin-bottom: 24px;
+        margin-right: 0;
+    }
+    #d_btns{
+        order: 3;
+        width: 140px;
+        margin: 0;
+    }
+    #d_btns input{
+        width: 60px;
+    }
+    #d_btns button{
+        width: 40px;
+    }
+    #d_cart{
+        order: 4;
+        width: 160px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 870px) and (min-width: 376px) {
+    #d_buy{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #d_btns{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 550px) and (min-width: 376px) {
+    .d_content{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .d_preview{
+        width: 100%;
+    }
+    .d_description{
+        margin: 0 16px;
+    }
+    #d_btns input{
+        width: 60px;
     }
 }
