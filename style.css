@@ -141,30 +141,39 @@ main .product{
 }
 .d_preview{
     margin-right: 16px;
-}
-.d_preview img{
+    display: flex;
+    justify-content: center;
     width: 300px;
     height: 300px;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+}
+.d_preview img{
+    align-self: center;
 }
 #d_title{
+    display: flex;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 16px;
 }
 #d_title_descr{
+    display: flex;
     font-weight: 400;
     line-height: 16px;
     font-size: 14px;
     margin-bottom: 24px;
 }
 #d_details{
+    display: flex;
     font-weight: bold;
     line-height: 21px;
     font-size: 18px;
     margin-bottom: 16px;
 }
 #d_details_descr{
+    display: flex;
     line-height: 16.41px;
     font-size: 14px;
     font-weight: 400;
@@ -173,7 +182,8 @@ main .product{
 #d_buy{
     display: flex;
     align-items: center;
-    justify-content: start;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 #d_price{
     color: #E97F03;
@@ -181,6 +191,12 @@ main .product{
     font-size: 36px;
     font-weight: 400;
     margin-right: 16px;
+    order: 1;
+}
+#d_btns{
+    display: flex;
+    align-items: center;
+    order: 2;
 }
 #d_btns input{
     margin: 0;
@@ -199,6 +215,9 @@ main .product{
 #d_btns input::-webkit-outer-spin-button, #d_btns input::-webkit-inner-spin-button{
     -webkit-appearance: none;
     margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
 }
 #d_btns button{
     background: none;
@@ -223,11 +242,20 @@ main .product{
     background: #E97F03;
     margin: 0 16px;
     border: 0;
+    order: 3;
 }
 #d_cart:hover{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
+.p_favorite.desc{
+    width: 25px;
+    display: flex;
+    order: 4;
+}
 
+
+
+/* Ширина экрана < 375px */
 @media screen and (max-width: 375px) {
     header{
         margin: 16px 24px;
@@ -264,5 +292,28 @@ main .product{
     }
     .product .p_image{
         width: 155px;
+    }
+
+
+
+    .d_content{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .d_description{
+        margin: 0 24px;
+    }
+    .d_preview{
+        width: 100%;
+        border: 0;
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
+        margin-bottom: 16px;
+    }
+    #d_title_descr{
+        margin-bottom: 16px;
+    }
+    #d_details_descr{
+        margin-bottom: 16px;
     }
 }
