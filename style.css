@@ -7,7 +7,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 23px 24px 0 24px;
+    margin: 23px 24px 24px 24px;
 }
 header div{
     display: flex;
@@ -51,10 +51,89 @@ header img{
 #header_cart{
     margin-right: 21px;
 }
-#header_cart:hover{
+header img:hover {
     filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg) brightness(100%) contrast(98%);
 }
-#header_userpage:hover{
-    filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg) brightness(100%) contrast(98%);
-}
+
 /* Catalog */
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -8px -8px;
+}
+main .product{
+    margin: 8px 8px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    width: 220px; 
+}
+.product .p_favorite{
+    margin: 8px 8px 8px 0;
+    align-self: flex-end;
+}
+/* .p_favorite:hover{
+    filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(24deg) brightness(100%) contrast(98%);
+} */
+.p_favorite:hover svg path{
+    fill: #fcac45;
+}
+.product .p_image{
+    width: 100%;
+    height: 140px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product .p_title{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+}
+.product .p_price{
+    width: 100%;
+    height: 20px;
+    color: #545454;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16.4px;
+    font-weight: 400;
+}
+.product:hover{
+    background: #F2F2F2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 375px) {
+    header{
+        margin: 16px 24px;
+    }
+    header .b1{
+        width: 200px;
+    }
+    header img{
+        width: 24px;
+        height: 24px;
+    }
+    #header_search{
+        width: 24px;
+        height: 24px;
+    }
+
+    main .product{
+        width: 155px;
+    }
+    .product .p_favorite{
+        margin-bottom: 0;
+    }
+    .product .p_image{
+        width: 155px;
+    }
+}
