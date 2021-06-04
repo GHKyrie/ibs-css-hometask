@@ -133,6 +133,9 @@ main .product{
 .product:hover{
     background: #F2F2F2;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
 }
 /* Detailed page */
@@ -239,6 +242,9 @@ input[type='number'] {
     font-size: 24px;
     font-weight: 400;
     color: white;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #E97F03;
     margin: 0 16px;
@@ -308,6 +314,9 @@ input[type='number'] {
     .d_preview{
         width: 100%;
         border: 0;
+        background: -moz-linear-gradient(360deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
+        background: -webkit-linear-gradient(360deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
+        background: -o-linear-gradient(360deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
         background: linear-gradient(360deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
         margin-bottom: 16px;
     }
